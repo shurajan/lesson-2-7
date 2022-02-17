@@ -87,7 +87,7 @@ public class ClientHandler {
                         msg.append(" ");
                     }
                     if (server.privateMessage(messageInfo[1], msg.toString())) {
-                        server.privateMessage(nickName, "sent");
+                        server.privateMessage(nickName, "/sent to " + messageInfo[1]);
                     } else {
                         server.privateMessage(nickName, "Пользователь " + messageInfo[1] + " не зашел в систему");
                     }
